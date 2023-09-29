@@ -93,6 +93,7 @@ export default function Edit({clientId,attributes,setAttributes,}) {
 								name={x.name}
 								checked={x.checked}
 								id={`${x.name}-sbg-${attributes.clntId}`}
+								rel="noopener"
 								onChange={() => {
 
 									setAttributes({ socialOptions: attributes.socialOptionsInput.filter(x => true === document.querySelector(`#${x.name}-sbg-${attributes.clntId}`).checked) });

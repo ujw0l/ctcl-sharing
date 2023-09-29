@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "title": "CTCL Sharing",
   "category": "ctc-lite-blocks",
+  "example": {},
   "icon": "share-alt",
   "description": "CT Commerce Lite social sharing block.",
   "supports": {

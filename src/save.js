@@ -20,6 +20,7 @@ export default function save({attributes}) {
 		<div{...useBlockProps.save()}>
 		{attributes.socialOptions.map((x,i)=> <a style={{ marginLeft:'5px', width:`${attributes.fontSize}px`,height:`${attributes.fontSize}px`, textDecoration:'none', display:'inline-block', border:`1px solid ${x.color}`,borderRadius:`${attributes.borderRadius}%` , padding:"2px", fontSize:`${attributes.fontSize}px`,color:x.color}} className={`ctcl-sharing-icon dashicons ${x.icon}`} 
 		href={`${x.href}${attributes.postPermalink}`}
+		rel="noopener"
 		target= "_blank"
 		title= {`${__('Share this page on', 'ctcl-sharing')} ${x.name}`}
 	  >
