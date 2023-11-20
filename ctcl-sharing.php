@@ -2,9 +2,9 @@
 /**
  * Plugin Name:       CTCL Sharing
  * Description:      Social sharing for CT Commerce Lite Products
- * Requires at least: 6.3.1
+ * Requires at least: 6.4.1
  * Requires PHP:      7.0
- * Version:           0.1.0
+ * Version:           0.1.1
  * Author:            UjW0L
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html

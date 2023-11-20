@@ -80,7 +80,7 @@ export default function Edit({clientId,attributes,setAttributes,}) {
 		 <PanelBody>
 					<p>{__('Choose Social Icons','ctc-social-sharing')}</p>
 
-					<ol>
+					<ol className='ctcl-sharing-ol'>
 
 					{
 
@@ -89,6 +89,7 @@ export default function Edit({clientId,attributes,setAttributes,}) {
 
 						
 							return 	<><li style={{color:x.color}} className={`ctcSsEditLi dashicons-before ${x.icon}`} title={x.name} > <CheckboxControl
+								style={{display:'inline-block'}}
 								key={i}
 								name={x.name}
 								checked={x.checked}
