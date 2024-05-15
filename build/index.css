@@ -1,1 +1,17 @@
-.ctcl-sharing-icon:hover{box-shadow:1px 1px 1px}.ctcl-sharing-ol li div{display:inline-block}
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.ctcl-sharing-icon:hover {
+  box-shadow: 1px 1px 1px;
+}
+
+.ctcl-sharing-ol li div {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=index.css.map*/

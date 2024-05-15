@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       CTCL Sharing
  * Description:      Social sharing for CT Commerce Lite Products
- * Requires at least: 6.4.1
+ * Requires at least: 6.5
  * Requires PHP:      7.0
  * Version:           0.1.1
  * Author:            UjW0L
@@ -12,6 +12,9 @@
  *
  * @package           create-block
  */
+
+
+ if ( ! defined( 'ABSPATH' ) ) exit; 
 
 /**
  * Registers the block using the metadata loaded from the `block.json` file.

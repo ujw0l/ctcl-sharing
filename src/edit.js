@@ -3,7 +3,6 @@ import { useSelect } from '@wordpress/data';
 import {useEffect} from 'react';
 import { CheckboxControl, PanelBody ,RangeControl} from '@wordpress/components';
 
-
 /**
  * Retrieves the translation of text.
  *
@@ -42,6 +41,7 @@ export default function Edit({clientId,attributes,setAttributes,}) {
 	setAttributes({clntId:clientId})
 	return (
 		<div {...useBlockProps()}>
+		
 			{attributes.socialOptions.map((x,i)=> <a style={{ marginLeft:'5px', width:`${attributes.fontSize}px`,height:`${attributes.fontSize}px`, textDecoration:'none', display:'inline-block', border:`1px solid ${x.color}`,borderRadius:`${attributes.borderRadius}%` , padding:"2px", fontSize:`${attributes.fontSize}px`,color:x.color}} className={`ctcl-sharing-icon dashicons ${x.icon}`} 
 							  href={`${x.href}${attributes.postPermalink}`}
 							  target= "_blank"
