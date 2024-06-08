@@ -25,10 +25,10 @@
  */
 
 if(class_exists('ctcLite')){ 
-	function create_block_ctcl_sharing_block_init() {
+	function ctcl_create_block_ctcl_sharing_block_init() {
 		register_block_type( __DIR__ . '/build' );
 	}
-	add_action( 'init', 'create_block_ctcl_sharing_block_init' );
+	add_action( 'init', 'ctcl_create_block_ctcl_sharing_block_init' );
 	
 	
 	 }else{
@@ -39,8 +39,8 @@ if(class_exists('ctcLite')){
 		 */
 		 add_action( 'admin_notices', function(){
 			 echo '<div class="notice notice-error is-dismissible"><p>';
-			  _e( 'CTCL Sharing plugin requires CTC Lite plugin installed and activated to work, please do so first.', 'ctcl-sharing' );
-			  echo '<a href="'.admin_url('plugin-install.php').'?tab=plugin-information&plugin=ctc-lite&TB_iframe=true&width=640&height=500" class="thickbox">'.__('Click Here to install it','ctcl-sharing').' </a>'; 
+			 esc_html_e( 'CTCL Sharing plugin requires CTC Lite plugin installed and activated to work, please do so first.', 'ctcl-sharing' );
+			  echo esc_html('<a href="'.admin_url('plugin-install.php').'?tab=plugin-information&plugin=ctc-lite&TB_iframe=true&width=640&height=500" class="thickbox">'.__('Click Here to install it','ctcl-sharing')).' </a>'; 
 			 echo '</p></div>';
 		 } );
 	 }
